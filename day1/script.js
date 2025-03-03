@@ -1,4 +1,5 @@
-Array.from(document.querySelectorAll('button')).forEach(function(button) {
+Array.from(document.querySelectorAll('button')).forEach(function(button, index) {
+    console.log(index);
     button.addEventListener("click", function(){
        alert('alert');
      });
@@ -32,7 +33,7 @@ button.addEventListener("click", function(){
 // let ourArray = ["any", "kind", "of", "data"];
 // ourArray.forEach
 
-
+/* NOTES
 Array.from( //Array class object & from method
 
     document.querySelectorAll('button')
@@ -49,5 +50,22 @@ Array.from( //Array class object & from method
     });
 }
 );
+*/
 
+//create an array of animals
+let animals = ["cats", "dogs"];
+//reassign array's index of 0
+animals[0] = "tigers";
+//assign a value to the array's index of 5
+animals[5] = "frogs"
+//print the array
+console.log(animals);
+//print the array's index of 2
+console.log(animals[2]);
+//output all the animals in the array
+for (let i = 0; i < animals.length; i++) {
+    console.log(animals[i]);
+}
+//use a for loop to output the names and the index
 
+//use the forEach method to do the same
